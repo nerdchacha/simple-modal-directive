@@ -1,0 +1,15 @@
+<div class="modal-overlay" ng-class="{'is-open' : isopen === true}">
+    <div class="modal">
+        <div class="modal-header">
+            {{title}}
+            <div class="close" ng-click="close()"></div>
+        </div>
+        <div class="modal-body">
+            {{body}}
+            <div class="modal-buttons">
+                <button class="success" ng-click="confirm()">OK</button>
+                <button class="danger" ng-click="close()">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
